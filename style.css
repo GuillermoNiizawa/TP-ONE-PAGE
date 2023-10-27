@@ -32,6 +32,36 @@ html {
     font-size: 18px;
 }
 
+/* BOTONES SLIDER ESTILO ///////////////////////*/
+
+.prev,
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s;
+
+    width: 170px;
+    height: 5rem;
+
+    cursor: pointer;
+
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 0.9;
+   
+    border-radius: 5%;
+    box-shadow: 5px 0px 10px var(--color1);
+  
+}
+
+/* ///////////////////////////////////////////// */
+
 @media (max-width:1300px) {
     html {
         font-size: 13px
@@ -203,36 +233,10 @@ h1 {
     max-width: 85%;
 }
 
-.prevMuelle,
-.nextMuelle {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: all 0.3s;
-
-    cursor: pointer;
-
-    width: 170px;
-    height: 5rem;
-
-    font-size: 3rem;
-    text-decoration: none;
-}
-
-.prev:hover,
-.next:hover {
-    opacity: 0.9;
-
-    border-radius: 5%;
-    box-shadow: 5px 0px 10px var(--color1);
-}
-
 .prevMuelle {
+    position: absolute;
     right: 170px;
+    bottom: 0;
 
     background-color: var(--color1);
 
@@ -240,6 +244,10 @@ h1 {
 }
 
 .nextMuelle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
     background-color: var(--color3);
 
     color: var(--color2);
@@ -285,43 +293,20 @@ h1 {
 
 }
 
-.prevChica,
-.nextChica {
+.prevChica {
     position: absolute;
     right: 0;
     bottom: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-
-    transition: all 0.3s;
-
-    width: 170px;
-    height: 5rem;
-
-    font-size: 3rem;
-    text-decoration: none;
-}
-
-.prev:hover,
-.next:hover {
-    opacity: 0.9;
-
-    border-radius: 5%;
-    box-shadow: 5px 0px 10px var(--color1);
-}
-
-.prevChica {
     background-color: var(--color3);
 
     color: var(--color2);
 }
 
 .nextChica {
+    position: absolute;
     right: -170px;
+    bottom: 0;
 
     background-color: var(--color1);
 
@@ -415,14 +400,22 @@ h1 {
 }
 
 .cafeTexto {
-    margin: 0 0 0 130px;
-    max-width: 1026px;
-
     display: flex;
     flex-direction: column;
 
+    margin: 0 0 0 130px;
+    max-width: 1026px;
+
     text-align: left;
 }
+
+.cafeTextoH2 {
+    margin: .2rem 0 0 0;
+
+    font-size: var(--fontSize1);
+    font-family: var(--fontFamily1);
+}
+
 
 .cafeTextoP {
     margin: 30px 0 0 0;
@@ -484,7 +477,7 @@ h1 {
     margin: 0 -125px 0 0;
     min-width: 400px;
     max-width: 100%;
- }
+}
 
 
 /* COLUMNA DERECHA */
@@ -741,36 +734,19 @@ h1 {
     color: var(--color2);
 }
 
-.prevVariosSlider,
-.nextVariosSlider {
+.prevVariosSlider {
     position: absolute;
     top: 405px;
     left: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: all 0.3s;
-
-    width: 170px;
-    height: 5rem;
-
-    cursor: pointer;
-
-    font-size: 3rem;
-    text-decoration: none;
-}
-
-
-
-.prevVariosSlider {
     background-color: var(--color3);
 
     color: var(--color2);
 }
 
 .nextVariosSlider {
+    position: absolute;
+    top: 405px;
     left: 170px;
 
     background-color: var(--color1);
@@ -868,8 +844,9 @@ footer {
 .footerAn {
     font-size: 1.1rem;
     font-family: var(--fontFamily2);
+    font-weight: 500;
     text-decoration: none;
-    color: var(--color2);
+    color: #909090;
 }
 
 .footerSuscribe {
@@ -881,7 +858,8 @@ footer {
 
     font-size: 1.1rem;
     font-family: var(--fontFamily2);
-    color: var(--color2);
+    font-weight: 500;
+    color: #909090;
 }
 
 
@@ -907,12 +885,13 @@ input {
     width: 260px;
     height: 55px;
     padding: 0px 20px 0px 20px;
-
-    font-size: 1rem;
-    font-family: var(--font_family2);
     box-sizing: border-box;
 
     background-color: #343434;
+
+    font-family: var(--font_family2);
+    font-weight: 500;
+    color: var(--color2);
 }
 
 .btnSend {
@@ -926,7 +905,6 @@ input {
 
     background-color: #343434;
 
-    font-size: 1rem;
     font-family: var(--font_family2);
     text-align: center;
     color: var(--color3);
