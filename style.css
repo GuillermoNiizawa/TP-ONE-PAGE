@@ -13,11 +13,11 @@
 }
 
 :root {
-    --fontSize1: 3.5rem;
-    --fontSize2: 2.8rem;
+    --fontSize1: 2.9rem;
+    --fontSize2: 2.3rem;
     --fontSize3: 2rem;
     --fontSize4: 1.5rem;
-    --fontSize5: 1.4rem;
+    --fontSize5: 1.2rem;
 
     --fontFamily1: 'Playfair Display', serif;
     --fontFamily2: 'Roboto Flex', sans-serif;
@@ -28,9 +28,7 @@
 
 }
 
-html {
-    font-size: 18px;
-}
+
 
 /* BOTONES SLIDER ESTILO ///////////////////////*/
 
@@ -42,38 +40,45 @@ html {
 
     transition: all 0.3s;
 
-    width: 170px;
-    height: 5rem;
+    width: 127px;
+    height: 66px;
 
     cursor: pointer;
 
     font-size: 2rem;
     text-decoration: none;
+    background-color: var(--color3);
+
+    color: var(--color2);
 }
 
 .prev:hover,
 .next:hover {
-    opacity: 0.9;
-   
-    border-radius: 5%;
-    box-shadow: 5px 0px 10px var(--color1);
-  
+    background-color: var(--color1);
+
+    color: var(--color3);
 }
 
 /* ///////////////////////////////////////////// */
 
-@media (max-width:1300px) {
-    html {
-        font-size: 13px
-    }
-}
+
 
 /* //////////////////////////////////////////////// FOTOS */
 
 
 
+body {
+
+    display: flex;
+    justify-content: center;
 
 
+}
+
+/* .section1400 {
+    width: 1025px;
+
+} */
 
 /* HEADER ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -92,7 +97,7 @@ header {
 
     width: 100%;
     max-width: 2000px;
-    padding: 40px 150px 0 150px;
+    padding: 27px 65px 10px 125px;
 }
 
 .contenedorLogo {
@@ -100,14 +105,15 @@ header {
 }
 
 .parsoLogo {
-    width: 48px;
-    height: 48px;
-    padding: .8rem 25px 0 0;
+    width: 35px;
+    height: 35px;
+    padding: 8px 21px 0 0;
 }
 
 .logoH3 {
+
     font-family: var(--fontFamily2);
-    font-size: var(--fontSize2);
+    font-size: 2.3rem;
     font-weight: 500;
 }
 
@@ -119,11 +125,11 @@ nav {
     display: inline-block;
     position: relative;
 
-    padding: 0 40px;
+    padding: 5px 60px 0 0;
 
     color: var(--color1);
     font-family: var(--fontFamily2);
-    font-size: var(--fontSize5);
+    font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
 }
@@ -133,7 +139,7 @@ nav {
 
     position: absolute;
     bottom: -10px;
-    left: 41px;
+    left: 2px;
 
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -142,7 +148,7 @@ nav {
 
     background-color: var(--color1);
 
-    width: 15px;
+    width: 11px;
     height: 2px;
 }
 
@@ -159,9 +165,10 @@ nav {
 .seccion1 {
     display: flex;
     justify-content: center;
-
-    margin: 130px 0 0 0;
+    /* background-color: #4267B2; */
+    margin: 105px 0 0 0;
     width: 100%;
+    max-width: 1400px;
 }
 
 .contenedorMuelle {
@@ -173,15 +180,16 @@ nav {
 .muelleTexto {
     display: flex;
 
-    width: 85%;
-    padding: 0 0 0 0px;
+    width: 85.5%;
+    padding: 0px 0 0 0;
+
 }
 
 h1 {
     max-width: 600px;
 
-    font-size: 6.5rem;
-    line-height: 7.5rem;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
     font-family: var(--fontFamily1);
     font-weight: 900;
     letter-spacing: 0.2rem;
@@ -193,14 +201,14 @@ h1 {
     flex-direction: column;
     align-content: center;
 
-    margin: 50px 0 0 80px;
-    padding: 0px 0 25px 60px;
+    margin: 33px 0 20px 68px;
+    padding: 0px 0 10px 48px;
 
-    border-left: solid 2px var(--color2);
+    border-left: solid 1px #707070;
 }
 
 .muelleTextoH3 {
-    font-size: var(--fontSize3);
+    font-size: 1.75rem;
     font-family: var(--fontFamily2);
     font-weight: 600;
     color: var(--color1);
@@ -208,16 +216,16 @@ h1 {
 
 .muelleTextoP {
     max-width: 675px;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0 55px 0 0;
 
-    font-size: var(--fontSize4);
-    line-height: 2.1rem;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
     font-family: var(--fontFamily2);
     font-weight: 500;
     text-align: left;
-    letter-spacing: -0.03rem;
-    color: var(--color2);
+    letter-spacing: 0.008rem;
+    color: #707070;
 }
 
 
@@ -226,31 +234,24 @@ h1 {
     display: flex;
     justify-content: flex-end;
 
-    margin: 80px 0 0 0;
+    margin: 65px 0 0 0;
 }
 
 .muelle {
-    max-width: 85%;
+    max-width: 86%;
+    min-width: 1025px;
 }
 
 .prevMuelle {
     position: absolute;
-    right: 170px;
+    right: 127px;
     bottom: 0;
-
-    background-color: var(--color1);
-
-    color: var(--color3);
 }
 
 .nextMuelle {
     position: absolute;
     right: 0;
     bottom: 0;
-
-    background-color: var(--color3);
-
-    color: var(--color2);
 }
 
 
@@ -261,7 +262,9 @@ h1 {
 .seccion2 {
     display: flex;
     justify-content: center;
+    /* background-color: #DB4437; */
 
+    margin: 180px 0 0 0;
     width: 100%;
 }
 
@@ -269,9 +272,8 @@ h1 {
     display: flex;
     justify-content: flex-start;
 
-    margin: 200px 0 0 0;
     width: 100%;
-    max-width: 2000px;
+    max-width: 1400px;
 }
 
 .chicaFoto {
@@ -288,8 +290,8 @@ h1 {
     vertical-align: bottom;
 
     min-width: 400px;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 573px;
+    max-height: 781px;
 
 }
 
@@ -297,46 +299,37 @@ h1 {
     position: absolute;
     right: 0;
     bottom: 0;
-
-    background-color: var(--color3);
-
-    color: var(--color2);
 }
 
 .nextChica {
     position: absolute;
-    right: -170px;
+    right: -127px;
     bottom: 0;
-
-    background-color: var(--color1);
-
-    color: var(--color3);
 }
 
 .chicaTexto {
-    margin: 12% 0 0 5%;
-    max-width: 825px;
+    margin: 182px 0 0 63px;
+    max-width: 535px;
+    padding: 0 40px 0 0;
 
     text-align: start;
 }
 
 .chicaTextoH2 {
-    max-width: 600px;
-
-    font-family: var(--fontFamily1);
     font-size: var(--fontSize1);
+    line-height: 3.75rem;
+    font-family: var(--fontFamily1);
     color: var(--color1);
 }
 
 .chicaTextoP {
-    margin-top: 4%;
-    padding: 0 55px 0 0;
+    margin: 30px 0 0 0;
     max-width: 900px;
 
-    font-size: var(--fontSize5);
-    line-height: 2.1rem;
+    font-size: 1.1rem;
+    line-height: 1.75rem;
     font-family: var(--fontFamily2);
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
     letter-spacing: -0.03rem;
     color: var(--color2);
@@ -345,29 +338,32 @@ h1 {
 
 
 .comillas {
-    margin: 8% 0 0 0;
-    padding: .8rem;
+    margin: 50px 0 0 0;
+    padding: .6rem;
+
     border-radius: 50%;
 
     background-color: var(--color1);
 
-    font-size: .8rem;
+    font-size: .7rem;
     text-align: center;
     color: var(--color3);
 }
 
 .cafeTextoH2 {
-    font-size: var(--fontSize2);
+    font-size: var(--fontSize1);
+    line-height: 3.75rem;
     font-family: var(--fontFamily1);
     color: var(--color1);
 }
 
+
 .chicaTextoP2 {
-    margin: 20px 0 0 0;
+    margin: 16px 0 0 0;
     max-width: 700px;
 
-    font-size: var(--fontSize4);
-    line-height: 2.1rem;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
     font-family: var(--fontFamily2);
     font-weight: 500;
     font-style: italic;
@@ -382,12 +378,15 @@ h1 {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .seccion3 {
-    margin: 200px 0 0 0;
+    margin: 180px 0 0 0;
+    width: 100%;
 }
 
 .seec {
     display: flex;
     justify-content: center;
+    margin: 0 63px;
+
 }
 
 /* COLUMNA IZQUIERDA */
@@ -396,37 +395,34 @@ h1 {
     display: flex;
     flex-direction: column;
 
-    padding: 0 50px 0 0;
+    padding: 8px 0 0 0;
 }
 
 .cafeTexto {
     display: flex;
     flex-direction: column;
 
-    margin: 0 0 0 130px;
-    max-width: 1026px;
+    margin: 0 90px 0 0;
+    max-width: 500px;
 
     text-align: left;
 }
 
 .cafeTextoH2 {
-    margin: .2rem 0 0 0;
-
     font-size: var(--fontSize1);
     font-family: var(--fontFamily1);
 }
 
 
 .cafeTextoP {
-    margin: 30px 0 0 0;
+    margin: 25px 0 0 0;
     max-width: 700px;
 
-    font-size: var(--fontSize4);
-    line-height: 2.4rem;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
     font-family: var(--fontFamily2);
     font-weight: 500;
     font-style: italic;
-    text-align: left;
     color: var(--color2);
 }
 
@@ -435,9 +431,9 @@ h1 {
 
     display: inline-block;
 
-    margin: 50px 0 0 0;
+    margin: 40px 0 0 0;
 
-    font-size: var(--fontSize5);
+    font-size: 1.1rem;
     font-family: var(--fontFamily2);
     font-weight: 500;
     text-decoration: none;
@@ -467,16 +463,16 @@ h1 {
 }
 
 .cafeFoto {
-    margin: 60px 0 0 0;
+    margin: 48px 0 0 0;
 }
 
 .cafe {
     position: relative;
-    float: right;
 
-    margin: 0 -125px 0 0;
-    min-width: 400px;
-    max-width: 100%;
+    width: 100%;
+    margin: 0 0px 0 0;
+    /* min-width: 400px; */
+    max-width: 605px;
 }
 
 
@@ -489,21 +485,31 @@ h1 {
     margin: 22px 0 0 0;
 }
 
+.mostradorFoto {
+    position: relative;
+
+    width: 448px;
+    height: 570px;
+}
+
 .mostrador {
-    min-width: 400px;
-    max-width: 100%;
+    position: absolute;
+    left: -58px;
+
+    /* min-width: 400px; */
+    max-width: 505px;
+    z-index: -1;
 }
 
 .mostradorTexto {
-    margin: 100px 0 0 210px;
     max-width: 335px;
-    padding: 0 10% 0 0;
+    padding: 70px 70px 0 103px;
 
     text-align: left;
 }
 
 .mostradorTextoH3 {
-    font-size: var(--fontSize3);
+    font-size: 1.75rem;
     font-family: var(--fontFamily2);
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -511,7 +517,7 @@ h1 {
 }
 
 .mostradorTextoP {
-    margin: 40px 0 0 0;
+    margin: 25px 0 0 0;
 
     font-size: var(--fontSize5);
     line-height: 2.1rem;
@@ -526,7 +532,7 @@ h1 {
 
     display: inline-block;
 
-    margin: 50px 0 0 0;
+    margin: 40px 0 0 0;
 
     font-size: var(--fontSize5);
     font-family: var(--fontFamily2);
@@ -562,6 +568,7 @@ h1 {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .seccion4 {
+    margin: 115px 0 0 0;
     display: flex;
     justify-content: center;
 
@@ -574,9 +581,8 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    margin: 200px 0 0 0;
     width: 100%;
-    height: 735px;
+    height: 545px;
 
     background-color: #fafbff;
 }
@@ -584,21 +590,25 @@ h1 {
 .contenedorEnrique {
     position: relative;
     display: flex;
+
+    /* width: 369px;
+    height: 161px; */
 }
 
 .enriqueFondo {
-    width: 190px;
-    height: 190px;
+    width: 140px;
+    height: 140px;
 
     background-color: var(--color1);
 }
 
 .enrique {
     position: absolute;
-    top: 30px;
-    left: 25px;
+    top: 21px;
+    left: 18px;
 
-    width: 190px;
+    width: 140px;
+
 }
 
 .enriqueIconos {
@@ -606,27 +616,27 @@ h1 {
     align-items: center;
     align-content: center;
 
-    margin: 25px 0 0 0;
+    margin: 18px 0 0 0;
 }
 
 .fa-facebook {
-    margin: 0px 20px 0 0;
+    margin: 0px 12px 0 0;
 
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #4267B2;
 }
 
 .fa-google-plus {
-    margin: 0px 20px 0 0;
+    margin: 0px 12px 0 0;
 
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #DB4437;
 }
 
 .twEnrique {
-    margin: 0px 20px 0 0;
+    margin: 0px 12px 0 0;
     border-radius: 50%;
-    padding: .5rem;
+    padding: .4rem;
 
     background-color: #1d9bf0;
 
@@ -637,27 +647,28 @@ h1 {
 .enriqueRedes {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
-    margin: 30px 0 0 60px;
-    height: 190px;
+    margin: 36px 0 0 48px;
+
 }
 
 .enriqueRedesH3 {
-    font-size: var(--fontSize3);
+    font-size: 1.7rem;
     font-family: var(--fontFamily2);
     font-weight: 600;
-    letter-spacing: 0.1rem;
+
     color: var(--color1);
+
+
 }
 
 .enriqueRedesP {
-    margin: 10px 0 0 0;
+    margin: 3px 0 0 0;
 
-    font-size: var(--fontSize5);
-    line-height: 2.1rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
     font-family: var(--fontFamily2);
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -0.03rem;
     color: var(--color2);
 }
@@ -667,12 +678,12 @@ h1 {
     padding: 0 5%;
     max-width: 1050px;
 
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 1.25rem;
+    line-height: 1.9rem;
     font-family: var(--fontFamily2);
     font-weight: 500;
-    font-style: italic;
     text-align: center;
+    font-style: italic;
     color: var(--color2);
 }
 
@@ -680,96 +691,94 @@ h1 {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .seccion5 {
-    display: flex;
-    justify-content: center;
+  
 
-    margin: 150px 0 0 0;
+    margin: 110px 0 0 0;
+    width: 100;
 }
 
 .contenedorVarios {
     display: flex;
-
-    padding: 0 50px 0 50px;
+    justify-content: space-around;
+    margin: 0 63px;
 }
-
+.variosSlider{
+    margin: 0 50px 0 0;
+}
 .variosArt {
     display: flex;
     flex-direction: column;
+    height: 350px;
 }
 
 .variosArt1 {
     display: flex;
 
-    margin: 0 0 40px 0;
+}
+
+.variosArt2 {
+    display: flex;
+   
+    padding: 27px 0 0 0;
+
 }
 
 .montanas {
-    width: 190px;
-    padding: 10px 50px 0 0;
+    width: 138px;
+    padding: 10px 37px 0 0;
 }
 
 .variosSlider {
     position: relative;
-
-    padding: 0 150px 0 0;
+    /* margin: 0 120px 0 0; */
+  
 }
 
 .variosSliderH2 {
-    max-width: 600px;
+    max-width: 465px;
 
-    font-size: 2.6rem;
+    font-size: 2.25rem;
     font-family: var(--fontFamily1);
     color: var(--color1);
 }
 
 .variosSliderP {
-    margin: 25px 0 50px 0;
-    max-width: 600px;
+    margin: 15px 0 0 0;
+    max-width: 430px;
 
-    font-size: var(--fontSize4);
-    line-height: 2.1rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
     font-family: var(--fontFamily2);
     font-weight: 400;
     letter-spacing: -0.03rem;
     color: var(--color2);
 }
 
-.prevVariosSlider {
-    position: absolute;
-    top: 405px;
-    left: 0;
-
-    background-color: var(--color3);
-
-    color: var(--color2);
+.btn5{
+    display: flex;
+    
+    margin: 140px 0 0 0;
 }
 
-.nextVariosSlider {
-    position: absolute;
-    top: 405px;
-    left: 170px;
-
-    background-color: var(--color1);
-
-    color: var(--color3);
+.variosArtTextos{
+    min-width: 300px;
+    max-width: 400px;
 }
-
 .variosArtH3 {
     position: relative;
 
     max-width: 510px;
 
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-family: var(--fontFamily1);
     color: var(--color1);
 }
 
 .variosArtP {
-    margin: 25px 0 50px 0;
-    max-width: 600px;
+    margin: 20px 0 50px 0;
 
-    font-size: var(--fontSize4);
-    line-height: 2.1rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
     font-family: var(--fontFamily2);
     font-weight: 400;
     letter-spacing: -0.03rem;
@@ -784,8 +793,9 @@ footer {
     display: flex;
     justify-content: center;
 
-    margin: 130px 0 0 0;
-    width: 100%;
+    margin: 170px 0 0 0;
+    width: 90%;
+    min-width: 1025px;
 }
 
 .fooot {
@@ -798,17 +808,17 @@ footer {
 .nada {
     width: 12%;
     max-width: 400px;
-    height: 150px;
+
 }
 
 .footerFondo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     width: 100%;
     max-width: 1600px;
-    height: 170px;
-    padding: 90px 120px 80px 150px;
+    height: 106px;
+    padding: 75px 60px 75px 170px;
 
     background-color: var(--color1);
 }
@@ -818,16 +828,18 @@ footer {
 }
 
 .parsoLogoF {
-    width: 48px;
-    height: 48px;
-    padding: 14px 25px 0 0;
+    width: 35px;
+    height: 35px;
+    padding: 8px 21px 0 0;
 
     filter: invert(1);
 }
 
 .logoFH3 {
-    font-size: 3rem;
+    margin: 0 50px 0 0;
+
     font-family: var(--fontFamily2);
+    font-size: 2.3rem;
     font-weight: 400;
     color: var(--color3);
 }
@@ -836,13 +848,14 @@ footer {
 .footerB {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    margin: 0 20px 0 0;
+
+    min-width: 123px;
 }
 
 .footerAn {
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-family: var(--fontFamily2);
     font-weight: 500;
     text-decoration: none;
@@ -852,11 +865,11 @@ footer {
 .footerSuscribe {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     margin: 0 0 0 40px;
 
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-family: var(--fontFamily2);
     font-weight: 500;
     color: #909090;
@@ -865,10 +878,11 @@ footer {
 
 .twFooter,
 .fa-facebook-f {
-    margin: 0 40px 0 0;
+    margin: 0 25px 0 0;
     padding: 0 0 0 5px;
 
-    font-size: 1.1rem;
+    font-size: .9rem;
+    line-height: rem;
     color: var(--color3);
 }
 
@@ -881,9 +895,9 @@ input {
 }
 
 .mail {
-    margin: 15px 0 0 0;
-    width: 260px;
-    height: 55px;
+    margin: 15px 10px 0 0;
+    width: 200px;
+    height: 40px;
     padding: 0px 20px 0px 20px;
     box-sizing: border-box;
 
@@ -895,13 +909,10 @@ input {
 }
 
 .btnSend {
-    position: absolute;
-    top: 38px;
-    left: 280px;
-
     border: none;
-    width: 100px;
-    height: 55px;
+    margin: 5px 0;
+    width: 75px;
+    height: 40px;
 
     background-color: #343434;
 
@@ -915,6 +926,18 @@ input {
 }
 
 
-input:placeholder-shown {
-    font-size: 0.8rem;
+
+@media (min-width:320px) and (max-width:480px) {
+    body {
+        background-color: blueviolet;
+    }
 }
+
+
+@media (min-width:481px) and (max-width:1024px) {
+    body {
+        background-color: #ca0eb8;
+    }
+}
+
+
